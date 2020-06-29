@@ -1,0 +1,53 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font: 13px Helvetica, Arial;
+}
+
+form {
+  display: flex;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+form #messageInput {
+  border: 0;
+  padding: 10px;
+  width: 90%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  border: 1px solid black;
+}
+
+form button,
+#nick {
+  width: 10%;
+  padding: 5px;
+  border: 1px solid black;
+  background: white;
+}
+
+@media screen and (max-width: 480px) {
+  form button,
+  #nick {
+    width: 15%;
+  }
+
+  #nick:focus {
+    width: 40%;
+  }
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0 0 45px;
+  padding: 0;
+}
+#messages li {
+  padding: 5px 10px;
+}
+
+#messages li.pullRight {
+  text-align: right;
+}
